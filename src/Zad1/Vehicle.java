@@ -1,9 +1,7 @@
 package Zad1;
 
 public class Vehicle {
-    public static final double AIRCONDITIONCAR = 0.8;
-    public static final double AIRCONDITIONTRUCK = 1.6;
-    public static final double WEIGHTCONSUMPTION = 0.5;
+
 
     private String name;
     private double tank;
@@ -15,17 +13,7 @@ public class Vehicle {
         this.avarageConsumption = avarageConsumption;
     }
 
-    public static double getAIRCONDITIONCAR() {
-        return AIRCONDITIONCAR;
-    }
 
-    public static double getAIRCONDITIONTRUCK() {
-        return AIRCONDITIONTRUCK;
-    }
-
-    public static double getWEIGHTCONSUMPTION() {
-        return WEIGHTCONSUMPTION;
-    }
 
     public String getName() {
         return name;
@@ -58,7 +46,7 @@ public class Vehicle {
                 ", srednie spalanie " + avarageConsumption + " ";
     }
 
-    public double rangeCalculator (double avarageConsumption){
+    public double rangeCalculator (){
         return tank/avarageConsumption*100;
     }
 }
