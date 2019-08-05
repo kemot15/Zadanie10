@@ -4,6 +4,7 @@ public class Vehicle {
     public static final double AIRCONDITIONCAR = 0.8;
     public static final double AIRCONDITIONTRUCK = 1.6;
     public static final double WEIGHTCONSUMPTION = 0.5;
+
     private String name;
     private double tank;
     private double avarageConsumption;
@@ -52,11 +53,9 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "Vehicle{" +
-                "name='" + name + '\'' +
-                ", tank=" + tank +
-                ", avarageConsumption=" + avarageConsumption +
-                '}';
+        return  "Samochod " + name +
+                ", pojemnosc baku " + tank +
+                ", srednie spalanie " + avarageConsumption + " ";
     }
 
     public double rangeCalculator (double avarageConsumption){

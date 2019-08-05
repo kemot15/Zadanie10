@@ -18,9 +18,7 @@ public class Car extends Vehicle{
 
     @Override
     public String toString() {
-        return super.toString() + "Car{" +
-                "airCondition=" + airCondition +
-                '}';
+        return super.toString() + "Klimatyzacja jest " + (airCondition?"włączona ":"wylaczona ");
     }
 
     @Override
